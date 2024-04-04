@@ -45,7 +45,6 @@ if (isset($_SESSION['S_IDUSUARIO'])) {
             <i class="fas fa-lock"></i>
           </div>
           <div class="div">
-
             <input type="password" required="true" id="txt_con" name="clave" placeholder="CONTRASEÑA" autocomplete="current-password">
           </div>
         </div>

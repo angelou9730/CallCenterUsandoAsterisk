@@ -15,7 +15,6 @@
 
             </div>
         </div>
-      
         <div class="col-lg-3 col-xs-6">
             <div class="small-box bg-yellow">
                 <div class="inner">
@@ -45,7 +44,6 @@
             <div class="small-box bg-aqua">
                 <div class="inner">
                     <h3 id="txtsolicitudhoy">0</h3>
-
                     <p id="txtsolifech">---</p>
                 </div>
                 <div class="icon">
@@ -54,102 +52,31 @@
                 <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
         </div>
-
     </div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <!-- DONUT CHART -->
-            <div class="box box-danger">
-                <div class="box-header with-border">
-                    <h3 class="box-title">Donut Chart</h3>
-
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                        </button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                    </div>
-                </div>
-                <div class="box-body">
-                    <canvas id="pieChart" style="height:250px"></canvas>
-                </div>
-                <!-- /.box-body -->
-            </div>
-            <!-- /.box -->
-
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Simple Full Width Table</h3>
-
-                    <div class="box-tools">
-                        <ul class="pagination pagination-sm no-margin pull-right">
-                            <li><a href="#">«</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">»</a></li>
-                        </ul>
-                    </div>
+                    <h3 class="box-title">Clientes Frecuentes de la Clinica Peruano Suiza</h3>
                 </div>
                 <!-- /.box-header -->
-                <div class="box-body no-padding">
-                    <table class="table" style="height:275px">
-                        <tbody>
+                <div class="box-body">
+                    <table  id="tabla_clientes_frecuentes" class="display responsive nowrap" style="width:100%">
+                    <thead>
                             <tr>
-                                <th style="width: 10px">#</th>
-                                <th>Task</th>
-                                <th>Progress</th>
-                                <th style="width: 40px">Label</th>
-                            </tr>
-                            <tr>
-                                <td>1.</td>
-                                <td>Update software</td>
-                                <td>
-                                    <div class="progress progress-xs">
-                                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                    </div>
-                                </td>
-                                <td><span class="badge bg-red">55%</span></td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Clean database</td>
-                                <td>
-                                    <div class="progress progress-xs">
-                                        <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
-                                    </div>
-                                </td>
-                                <td><span class="badge bg-yellow">70%</span></td>
-                            </tr>
-                            <tr>
-                                <td>3.</td>
-                                <td>Cron job running</td>
-                                <td>
-                                    <div class="progress progress-xs progress-striped active">
-                                        <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
-                                    </div>
-                                </td>
-                                <td><span class="badge bg-light-blue">30%</span></td>
-                            </tr>
-                            <tr>
-                                <td>4.</td>
-                                <td>Fix and squish bugs</td>
-                                <td>
-                                    <div class="progress progress-xs progress-striped active">
-                                        <div class="progress-bar progress-bar-success" style="width: 90%"></div>
-                                    </div>
-                                </td>
-                                <td><span class="badge bg-green">90%</span></td>
-                            </tr>
-                        </tbody>
+                                <th>#</th>
+                                <th>Nombre Cliente</th>
+                                <th>Apellido Cliente</th>
+                                <th>Numero Llamante</th>
+                                <th>Cantidad Llamadas</th>
+                                <th>Ultima Llamada</th>
+                            </tr>                              
+                    </thead>
                     </table>
                 </div>
                 <!-- /.box-body -->
             </div>
         </div>
-    </div>
+
     <div class="row">
         <div class="col-md-6">
             <div class="box box-solid bg-green-gradient">
@@ -382,7 +309,6 @@
 
             </div>
             <!-- /.box -->
-
         </div>
         <div class="col-md-6">
 
@@ -437,7 +363,6 @@
                 </div>
                 <!-- /.box -->
             </div>
-
         </div>
     </div>
 </section>
@@ -451,40 +376,29 @@
                 </div>
                 <div class="modal-body">
 
-                <div class="box-body">
-            <div class="form-group">
-                <div class="col-lg-10">
-                    <div class="input-group">
-                        <input type="text" class="global_filter form-control" id="global_filter" placeholder="Ingresar dato a buscar">
-                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                    </div><br>
-                </div>
-
-            </div>
-            <table id="tabla_registrar_respondidas" class="display responsive nowrap" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Fecha Hora</th>
-                        <th>Origen</th>
-                        <th>Destino</th>
-                        <th>Disposicion</th>
-
-                 
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th>#</th>
-                        <th>Fecha Hora</th>
-                        <th>Origen</th>
-                        <th>Destino</th>
-                        <th>Disposicion</th>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-
+                    <div class="box-body">
+                      
+                        <table id="tabla_registrar_respondidas" class="display responsive nowrap" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Fecha Hora</th>
+                                    <th>Origen</th>
+                                    <th>Destino</th>
+                                    <th>Disposicion</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Fecha Hora</th>
+                                    <th>Origen</th>
+                                    <th>Destino</th>
+                                    <th>Disposicion</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"><b>&nbsp;Cerrar</b></i></button>
@@ -503,40 +417,29 @@
                 </div>
                 <div class="modal-body">
 
-                <div class="box-body">
-            <div class="form-group">
-                <div class="col-lg-10">
-                    <div class="input-group">
-                        <input type="text" class="global_filter form-control" id="global_filter" placeholder="Ingresar dato a buscar">
-                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                    </div><br>
-                </div>
-
-            </div>
-            <table id="tabla_registrar_ocupadas" class="display responsive nowrap" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Fecha Hora</th>
-                        <th>Origen</th>
-                        <th>Destino</th>
-                        <th>Disposicion</th>
-
-                 
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th>#</th>
-                        <th>Fecha Hora</th>
-                        <th>Origen</th>
-                        <th>Destino</th>
-                        <th>Disposicion</th>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-
+                    <div class="box-body">
+                        
+                        <table id="tabla_registrar_ocupadas" class="display responsive nowrap" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Fecha Hora</th>
+                                    <th>Origen</th>
+                                    <th>Destino</th>
+                                    <th>Disposicion</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Fecha Hora</th>
+                                    <th>Origen</th>
+                                    <th>Destino</th>
+                                    <th>Disposicion</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"><b>&nbsp;Cerrar</b></i></button>
@@ -555,39 +458,31 @@
                 </div>
                 <div class="modal-body">
 
-                <div class="box-body">
-            <div class="form-group">
-                <div class="col-lg-10">
-                    <div class="input-group">
-                        <input type="text" class="global_filter form-control" id="global_filter" placeholder="Ingresar dato a buscar">
-                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                    </div><br>
-                </div>
+                    <div class="box-body">
+                        
+                        <table id="tabla_registrar_omitidas" class="display responsive nowrap" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Fecha Hora</th>
+                                    <th>Origen</th>
+                                    <th>Destino</th>
+                                    <th>Disposicion</th>
 
-            </div>
-            <table id="tabla_registrar_omitidas" class="display responsive nowrap" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Fecha Hora</th>
-                        <th>Origen</th>
-                        <th>Destino</th>
-                        <th>Disposicion</th>
 
-                 
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th>#</th>
-                        <th>Fecha Hora</th>
-                        <th>Origen</th>
-                        <th>Destino</th>
-                        <th>Disposicion</th>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Fecha Hora</th>
+                                    <th>Origen</th>
+                                    <th>Destino</th>
+                                    <th>Disposicion</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
 
                 </div>
                 <div class="modal-footer">
@@ -605,4 +500,5 @@
     List_Call_Answered();
     List_Call_Busy();
     List_Call_NoAnswer();
+    List_Frecuency_Client();
 </script>
