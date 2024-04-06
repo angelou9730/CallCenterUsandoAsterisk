@@ -34,6 +34,8 @@
                         <th>Direccion</th>
                         <th>Numero de Cliente</th>
                         <th>Encargado del Registro</th>
+                        <th>WSP Mensaje</th>
+
                     </tr>
                 </thead>
                 <tfoot>
@@ -48,6 +50,8 @@
                         <th>Direccion</th>
                         <th>Numero de Cliente</th>
                         <th>Encargado del Registro</th>
+                        <th>WSP Mensaje</th>
+
                     </tr>
                 </tfoot>
             </table>

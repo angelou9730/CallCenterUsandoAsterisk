@@ -1,6 +1,12 @@
 <script type="text/javascript" src="../js/dashboard_callcenter.js?rev=<?php echo time(); ?>"></script>
 <section class="content">
     <div class="row">
+    <div class="col-lg-3 col-xs-6">
+        <a href="https://wa.me/+51989316622" class="btn btn-success" ><i class='fa fa-whatsapp'></i> Click!! Comunicarse con CALL-CENTER</a>
+    </div><br><br>
+    </div>
+ 
+    <div class="row">
         <div class="col-lg-3 col-xs-6">
             <!-- small box -->
             <div class="small-box bg-green">
@@ -53,29 +59,29 @@
             </div>
         </div>
     </div>
-        <div class="col-md-12">
-            <div class="box">
-                <div class="box-header">
-                    <h3 class="box-title">Clientes Frecuentes de la Clinica Peruano Suiza</h3>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                    <table  id="tabla_clientes_frecuentes" class="display responsive nowrap" style="width:100%">
-                    <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Nombre Cliente</th>
-                                <th>Apellido Cliente</th>
-                                <th>Numero Llamante</th>
-                                <th>Cantidad Llamadas</th>
-                                <th>Ultima Llamada</th>
-                            </tr>                              
-                    </thead>
-                    </table>
-                </div>
-                <!-- /.box-body -->
+    <div class="col-md-12">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Clientes Frecuentes de la Clinica Peruano Suiza</h3>
             </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <table id="tabla_clientes_frecuentes" class="display responsive nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre Cliente</th>
+                            <th>Apellido Cliente</th>
+                            <th>Numero Llamante</th>
+                            <th>Cantidad Llamadas</th>
+                            <th>Ultima Llamada</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <!-- /.box-body -->
         </div>
+    </div>
 
     <div class="row">
         <div class="col-md-6">
@@ -377,7 +383,7 @@
                 <div class="modal-body">
 
                     <div class="box-body">
-                      
+
                         <table id="tabla_registrar_respondidas" class="display responsive nowrap" style="width:100%">
                             <thead>
                                 <tr>
@@ -418,7 +424,7 @@
                 <div class="modal-body">
 
                     <div class="box-body">
-                        
+
                         <table id="tabla_registrar_ocupadas" class="display responsive nowrap" style="width:100%">
                             <thead>
                                 <tr>
@@ -459,7 +465,7 @@
                 <div class="modal-body">
 
                     <div class="box-body">
-                        
+
                         <table id="tabla_registrar_omitidas" class="display responsive nowrap" style="width:100%">
                             <thead>
                                 <tr>

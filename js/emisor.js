@@ -33,6 +33,11 @@ function listar_registro_emisor() {
             { "data": "direccion" },
             { "data": "numeroCliente" },
             { "data": "Nombre_Completo" },
+            {
+                "defaultContent": "<button style='display: block; margin: 0 auto;' type='button' class='wsp btn btn-success'><i class='fa fa-whatsapp'></i></button>&nbsp;"
+            }
+             
+
         ],
 
         "language": idioma_espanol,
@@ -52,3 +57,11 @@ function filterGlobal() {
         $('#global_filter').val(),
     ).draw();
 }
+
+$('#tabla_registrar_emisor').on('click','.wsp',function(){
+    var data =table.row($(this).parents('tr')).data();
+    var phoneclient = data.numeroCliente;
+    var message='Le saludamos de la Clinica peruano suiza, nuestros servicios son estos:';
+    var whatsappURL='https://wa.me/'+phoneclient+'?text='+encodeURIComponent(message);
+    window.location.href=whatsappURL;
+  });
