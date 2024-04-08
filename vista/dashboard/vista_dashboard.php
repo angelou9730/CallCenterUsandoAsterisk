@@ -1,11 +1,14 @@
 <script type="text/javascript" src="../js/dashboard_callcenter.js?rev=<?php echo time(); ?>"></script>
 <section class="content">
     <div class="row">
-    <div class="col-lg-3 col-xs-6">
-        <a href="https://wa.me/+51989316622" class="btn btn-success" ><i class='fa fa-whatsapp'></i> Click!! Comunicarse con CALL-CENTER</a>
-    </div><br><br>
+        <div class="col-lg-3 col-xs-6">
+            <a href="https://wa.me/+51989316622" class="btn btn-success" target="_blank">
+                <i class='fa fa-whatsapp'></i> Click!! Comunicarse con CALL-CENTER
+            </a>
+
+        </div><br><br>
     </div>
- 
+
     <div class="row">
         <div class="col-lg-3 col-xs-6">
             <!-- small box -->
